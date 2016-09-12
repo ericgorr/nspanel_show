@@ -650,7 +650,7 @@
         <!--Inspector Panel Controller-->
         <scene sceneID="eWL-fS-sAl">
             <objects>
-                <windowController id="Lcu-YC-MzV" userLabel="Inspector Panel Controller" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="Lcu-YC-MzV" userLabel="Inspector Panel Controller" sceneMemberID="viewController">
                     <window key="window" title="Inspector" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Diq-WM-Wti" userLabel="Inspector Panel Window" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
