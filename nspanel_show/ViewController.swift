@@ -13,30 +13,21 @@ class ViewController: NSViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    
-    
-    override var representedObject: AnyObject?
-    {
-        didSet
-        {
-            // Update the view, if already loaded.
-        }
     }
     
     
     
-    @IBAction func showMyPanel( sender: AnyObject )
+    @IBAction func showMyPanel( _ sender: AnyObject )
     {
         NSLog( "How do I show the panel?" )
+        
+        self.performSegue( withIdentifier: "Show Inspector", sender: self )
+        
     }
     
     
     
-    @IBAction func hideMyPanel( sender: AnyObject )
+    @IBAction func hideMyPanel( _ sender: AnyObject )
     {
         NSLog( "How do I hide the panel?" )
     }

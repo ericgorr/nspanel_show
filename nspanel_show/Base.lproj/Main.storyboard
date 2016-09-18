@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -651,8 +651,8 @@
         <scene sceneID="eWL-fS-sAl">
             <objects>
                 <windowController showSeguePresentationStyle="single" id="Lcu-YC-MzV" userLabel="Inspector Panel Controller" sceneMemberID="viewController">
-                    <window key="window" title="Inspector" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Diq-WM-Wti" userLabel="Inspector Panel Window" customClass="NSPanel">
-                        <windowStyleMask key="styleMask" titled="YES" utility="YES"/>
+                    <window key="window" title="Inspector" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="Inspector" animationBehavior="default" id="Diq-WM-Wti" userLabel="Inspector Panel Window" customClass="NSPanel">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="425" y="461" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1417"/>
@@ -663,7 +663,7 @@
                 </windowController>
                 <customObject id="fHS-vK-I6Z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="250"/>
+            <point key="canvasLocation" x="425" y="230"/>
         </scene>
         <!--Inspector View Controller-->
         <scene sceneID="cVr-0p-hEo">
@@ -675,6 +675,7 @@
                         <subviews>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k17-no-86q">
                                 <rect key="frame" x="173" y="177" width="134" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Inspector Information" id="iQw-EG-BIa">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -686,7 +687,7 @@
                 </viewController>
                 <customObject id="ALk-V8-WOX" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="717"/>
+            <point key="canvasLocation" x="455" y="726"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
@@ -697,6 +698,23 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="DB163085-E1AC-4206-9548-DD5E8F4800D3" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="a8g-Vw-fRh">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="dZp-Zd-jia"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarShowFontsItem" id="3Cz-JB-p9p"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="d7r-pK-s5n"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Fte-hY-to8"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="4UT-g1-Y3G"/>
+                                <toolbarItem implicitItemIdentifier="3A357169-2C08-4B76-9E9E-E3EF42273DBB" label="Inspector" paletteLabel="Inspector" tag="-1" id="aMh-ga-IRe">
+                                    <connections>
+                                        <segue destination="Lcu-YC-MzV" kind="show" identifier="Show Inspector" id="nVH-zK-mGw"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="aMh-ga-IRe"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                     </window>
                     <connections>
                         <segue destination="5gI-5U-AMq" kind="relationship" relationship="window.shadowedContentViewController" id="nsd-lR-9xd"/>
@@ -704,7 +722,7 @@
                 </windowController>
                 <customObject id="6f7-a7-6o1" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-153" y="250"/>
+            <point key="canvasLocation" x="-171" y="280"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -714,29 +732,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k8i-hG-HQN">
-                                <rect key="frame" x="116" y="201" width="110" height="32"/>
-                                <buttonCell key="cell" type="push" title="Show Panel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q7U-gl-ByR">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="showMyPanel:" target="5gI-5U-AMq" id="flV-Sy-EqZ"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mX7-eO-g7h">
-                                <rect key="frame" x="241" y="201" width="152" height="32"/>
-                                <buttonCell key="cell" type="push" title="Show Panel Segue" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="As5-2a-8cY">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="showMyPanel:" target="5gI-5U-AMq" id="zAU-qn-W9m"/>
-                                    <segue destination="Lcu-YC-MzV" kind="show" identifier="Show Inspector" id="iYA-yu-I6h"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="t8t-ui-X9f">
                                 <rect key="frame" x="189" y="147" width="105" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Hide Panel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="thB-g3-5iL">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -745,12 +743,23 @@
                                     <action selector="hideMyPanel:" target="5gI-5U-AMq" id="9J1-Br-tN8"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k8i-hG-HQN">
+                                <rect key="frame" x="185" y="204" width="110" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Show Panel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Q7U-gl-ByR">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showMyPanel:" target="5gI-5U-AMq" id="flV-Sy-EqZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
                 <customObject id="2Tp-Fl-jBw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="717"/>
+            <point key="canvasLocation" x="-171" y="726"/>
         </scene>
     </scenes>
 </document>
