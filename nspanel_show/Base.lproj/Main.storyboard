@@ -687,7 +687,7 @@
                 </viewController>
                 <customObject id="ALk-V8-WOX" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="455" y="726"/>
+            <point key="canvasLocation" x="425" y="726"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
