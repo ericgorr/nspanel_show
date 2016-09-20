@@ -14,22 +14,5 @@ class ViewController: NSViewController
     {
         super.viewDidLoad()
     }
-    
-    
-    
-    @IBAction func showMyPanel( _ sender: AnyObject )
-    {
-        NSLog( "How do I show the panel?" )
-        
-        self.performSegue( withIdentifier: "Show Inspector", sender: self )
-        
-    }
-    
-    
-    
-    @IBAction func hideMyPanel( _ sender: AnyObject )
-    {
-        NSLog( "How do I hide the panel?" )
-    }
 }
 

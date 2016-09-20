@@ -645,12 +645,12 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="nspanel_show" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="0.0"/>
+            <point key="canvasLocation" x="127" y="-67"/>
         </scene>
         <!--Inspector Panel Controller-->
         <scene sceneID="eWL-fS-sAl">
             <objects>
-                <windowController showSeguePresentationStyle="single" id="Lcu-YC-MzV" userLabel="Inspector Panel Controller" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="Lcu-YC-MzV" userLabel="Inspector Panel Controller" customClass="InspectorWindowController" customModule="nspanel_show" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Inspector" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="Inspector" animationBehavior="default" id="Diq-WM-Wti" userLabel="Inspector Panel Window" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -692,7 +692,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Document Window Controller" id="jGA-0Y-lOj" customClass="WindowController" customModule="nspanel_show" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Ckk-yw-fiv">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -740,7 +740,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="hideMyPanel:" target="5gI-5U-AMq" id="9J1-Br-tN8"/>
+                                    <action selector="hideMyPanel:" target="2Tp-Fl-jBw" id="4Cf-Je-p41"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k8i-hG-HQN">
@@ -751,7 +751,7 @@
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="showMyPanel:" target="5gI-5U-AMq" id="flV-Sy-EqZ"/>
+                                    <action selector="showMyPanel:" target="2Tp-Fl-jBw" id="kcK-if-1Ts"/>
                                 </connections>
                             </button>
                         </subviews>
