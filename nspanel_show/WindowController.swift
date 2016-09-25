@@ -31,7 +31,7 @@ class WindowController: NSWindowController
     {
         NSLog( "How do I hide the panel?" )
         
-        InspectorWindowController.sharedInstance?.performClose( self )
+        InspectorWindowController.sharedInstance?.window?.performClose( self )
     }
     
 }

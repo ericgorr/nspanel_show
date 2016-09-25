@@ -10,12 +10,12 @@ import Cocoa
 
 class InspectorWindowController: NSWindowController
 {
-    static var sharedInstance: NSWindow? = nil
+    static var sharedInstance: InspectorWindowController? = nil
         
     override func windowDidLoad()
     {
         super.windowDidLoad()
         
-        InspectorWindowController.sharedInstance = self.window
+        InspectorWindowController.sharedInstance = self
     }
 }
