@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67175E581DEB60C100BC1849 /* ELIZInspectorSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67175E571DEB60C100BC1849 /* ELIZInspectorSegue.swift */; };
 		67328FC71D90B92B002D50AD /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67328FC61D90B92B002D50AD /* WindowController.swift */; };
 		67328FCA1D90BC48002D50AD /* InspectorWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67328FC81D90BC48002D50AD /* InspectorWindowController.swift */; };
 		675915B31D85F874007BA6C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675915B21D85F874007BA6C7 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67175E571DEB60C100BC1849 /* ELIZInspectorSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELIZInspectorSegue.swift; sourceTree = "<group>"; };
 		67328FC61D90B92B002D50AD /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		67328FC81D90BC48002D50AD /* InspectorWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectorWindowController.swift; sourceTree = "<group>"; };
 		675915AF1D85F874007BA6C7 /* nspanel_show.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nspanel_show.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +67,7 @@
 				675915B41D85F874007BA6C7 /* ViewController.swift */,
 				675915B81D85F874007BA6C7 /* Assets.xcassets */,
 				675915BA1D85F874007BA6C7 /* Main.storyboard */,
+				67175E571DEB60C100BC1849 /* ELIZInspectorSegue.swift */,
 				675915BD1D85F874007BA6C7 /* Info.plist */,
 			);
 			path = nspanel_show;
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				675915B51D85F874007BA6C7 /* ViewController.swift in Sources */,
+				67175E581DEB60C100BC1849 /* ELIZInspectorSegue.swift in Sources */,
 				67328FC71D90B92B002D50AD /* WindowController.swift in Sources */,
 				67328FCA1D90BC48002D50AD /* InspectorWindowController.swift in Sources */,
 				675915B31D85F874007BA6C7 /* AppDelegate.swift in Sources */,
