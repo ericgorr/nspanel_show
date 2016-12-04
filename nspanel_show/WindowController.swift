@@ -9,7 +9,7 @@
 import Cocoa
 
 class WindowController: NSWindowController
-{
+{            
     override func windowDidLoad()
     {
         super.windowDidLoad()
@@ -30,6 +30,6 @@ class WindowController: NSWindowController
     {
         NSLog( "How do I hide the panel?" )
         
-        InspectorWindowController.sharedInstance?.window?.performClose( self )
+        //InspectorWindowController.sharedInstance.window?.performClose( self )
     }
 }
