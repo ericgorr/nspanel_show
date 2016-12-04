@@ -724,7 +724,11 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarPrintItem" id="d7r-pK-s5n"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="Fte-hY-to8"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="4UT-g1-Y3G"/>
-                                <toolbarItem implicitItemIdentifier="30DB7906-D70B-46A2-95A5-441391E878A4" label="Inspector" paletteLabel="Inspector" tag="-1" image="NSAddTemplate" id="0wD-2E-5ey"/>
+                                <toolbarItem implicitItemIdentifier="30DB7906-D70B-46A2-95A5-441391E878A4" label="Inspector" paletteLabel="Inspector" tag="-1" image="NSAddTemplate" id="0wD-2E-5ey">
+                                    <connections>
+                                        <segue destination="Lcu-YC-MzV" kind="custom" customClass="ELIZInspectorSegue" customModule="nspanel_show" customModuleProvider="target" id="6Ke-S6-L5K"/>
+                                    </connections>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="0wD-2E-5ey"/>

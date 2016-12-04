@@ -12,10 +12,10 @@ class InspectorWindowController: NSWindowController
 {
     static let sharedInstance = InspectorWindowController()
     
-    override func init()
-    {
-        
-    }
+//    override func init()
+//    {
+//        
+//    }
     
     override func windowDidLoad()
     {
