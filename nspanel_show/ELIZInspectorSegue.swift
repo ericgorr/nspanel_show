@@ -17,8 +17,16 @@ class ELIZInspectorSegue: NSStoryboardSegue
         let dest        = self.destinationController as! NSWindowController
         let destWindow  = dest.window!
         
-        NSLog( "Hidden" )
-        dest.showWindow( self )
+        if ( destWindow.isVisible )
+        {
+            NSLog( "Visible" )
+            destWindow.orderOut( self )
+        }
+        else
+        {
+            NSLog( "Hidden" )
+            dest.showWindow( self )
+        }
         
         NSLog( "%@", source )
         NSLog( "%@", dest )
