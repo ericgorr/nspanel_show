@@ -13,6 +13,8 @@ class WindowController: NSWindowController
     override func windowDidLoad()
     {
         super.windowDidLoad()
+        
+        NSLog( "How do I show the panel?" )
     }
 
     
@@ -29,7 +31,5 @@ class WindowController: NSWindowController
     @IBAction func hideMyPanel( _ sender: AnyObject )
     {
         NSLog( "How do I hide the panel?" )
-        
-        //InspectorWindowController.sharedInstance.window?.performClose( self )
     }
 }

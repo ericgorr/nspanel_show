@@ -647,10 +647,10 @@
             </objects>
             <point key="canvasLocation" x="127" y="-67"/>
         </scene>
-        <!--Inspector Panel Controller-->
+        <!--Inspector Window Controller-->
         <scene sceneID="eWL-fS-sAl">
             <objects>
-                <windowController showSeguePresentationStyle="single" id="Lcu-YC-MzV" userLabel="Inspector Panel Controller" customClass="InspectorWindowController" customModule="nspanel_show" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="Inspector Window Controller" showSeguePresentationStyle="single" id="Lcu-YC-MzV" userLabel="Inspector Window Controller" customClass="InspectorWindowController" customModule="nspanel_show" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Inspector" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="Inspector" animationBehavior="default" id="Diq-WM-Wti" userLabel="Inspector Panel Window" customClass="NSPanel">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" resizable="YES" utility="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -726,7 +726,7 @@
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="4UT-g1-Y3G"/>
                                 <toolbarItem implicitItemIdentifier="30DB7906-D70B-46A2-95A5-441391E878A4" label="Inspector" paletteLabel="Inspector" tag="-1" image="NSAddTemplate" id="0wD-2E-5ey">
                                     <connections>
-                                        <segue destination="Lcu-YC-MzV" kind="custom" customClass="ELIZInspectorSegue" customModule="nspanel_show" customModuleProvider="target" id="6Ke-S6-L5K"/>
+                                        <segue destination="Lcu-YC-MzV" kind="custom" identifier="" customClass="ELIZInspectorSegue" customModule="nspanel_show" customModuleProvider="target" id="BWy-qT-9fZ"/>
                                     </connections>
                                 </toolbarItem>
                             </allowedToolbarItems>

@@ -8,19 +8,17 @@
 
 import Cocoa
 
+
+//let storyboard = NSStoryboard(name:"Main", bundle: nil)
+//let controller = storyboard.instantiateController(withIdentifier: "Inspector Window Controller")
+
+
 class InspectorWindowController: NSWindowController
 {
-    static let sharedInstance = InspectorWindowController()
-    
-//    override func init()
-//    {
-//        
-//    }
-    
     override func windowDidLoad()
     {
         super.windowDidLoad()
         
-        NSLog( ":::: %@", InspectorWindowController.sharedInstance );
+        //NSLog( ":::: %@", InspectorWindowController.sharedInstance );
     }
 }
